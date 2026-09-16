@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Encontre seu novo imóvel com atendimento personalizado de Deborah Nunes, corretora de imóveis." />
+    <title>Deborah Nunes | Corretora de Imóveis</title>
+
+    <!-- FONTES: elegante para títulos e moderna para os demais textos. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Deborah Nunes — início">
+        <img class="brand-logo" src="images/logo-deborah-nunes.png" alt="Deborah Nunes, corretora de imóveis" />
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#imoveis">Imóveis</a>
+        <a href="#atendimento">Atendimento</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+
+      <!-- TROQUE pelo WhatsApp com DDD, sem espaços. -->
+      <a class="header-button" href="https://wa.me/5512981987690" target="_blank" rel="noreferrer">
+        Falar comigo <span aria-hidden="true">↗</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Menu para celular">
+        <a href="#imoveis">Imóveis</a>
+        <a href="#atendimento">Atendimento</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO — PRIMEIRA TELA -->
+      <section class="hero" id="inicio">
+        <img class="hero-background" src="images/gran-park-residence.webp" alt="Fachada do empreendimento Gran Park Residence" />
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content reveal">
+          <p class="eyebrow">Imóveis para viver e investir</p>
+          <h1>Seu próximo endereço começa com uma boa escolha.</h1>
+          <p class="hero-description">
+            Atendimento próximo e personalizado para encontrar o imóvel que combina com seus planos, suas necessidades e o seu momento.
+          </p>
+
+          <div class="hero-actions">
+            <!-- WHATSAPP DA DEBORAH -->
+            <a class="button button-primary" href="https://wa.me/5512981987690" target="_blank" rel="noreferrer">
+              Encontrar meu imóvel <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-secondary" href="#imoveis">Ver empreendimentos</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <span class="hero-card-label">Atendimento personalizado</span>
+          <strong>Da primeira conversa até a entrega das chaves.</strong>
+          <a href="#atendimento">Conheça o atendimento →</a>
+        </div>
+      </section>
+
+      <!-- FAIXA DE DIFERENCIAIS -->
+      <section class="benefits" aria-label="Diferenciais do atendimento">
+        <article><span>01</span><div><strong>Curadoria de imóveis</strong><p>Opções selecionadas de acordo com o seu perfil.</p></div></article>
+        <article><span>02</span><div><strong>Atendimento próximo</strong><p>Orientação clara em cada etapa da sua decisão.</p></div></article>
+        <article><span>03</span><div><strong>Compra com segurança</strong><p>Acompanhamento do primeiro contato à negociação.</p></div></article>
+      </section>
+
+      <!-- EMPREENDIMENTOS -->
+      <section class="properties-section" id="imoveis">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow eyebrow-dark">Oportunidades selecionadas</p>
+            <h2>Empreendimentos em destaque</h2>
+          </div>
+
+          <p>
+            Conheça algumas das opções disponíveis e fale comigo para receber
+            valores, plantas, condições e disponibilidade atualizada.
+          </p>
+        </div>
+
+        <div class="property-grid">
+          <!-- GRAN PARK: 13 FOTOS -->
+          <article class="property-card property-card-wide reveal">
+            <div
+              class="property-image property-carousel"
+              data-carousel
+              data-folder="images/empreendimentos/gran-park"
+              data-total="13"
+              data-name="Gran Park Residence"
+            >
+              <span class="property-tag">Em destaque</span>
+              <button class="carousel-arrow carousel-prev" type="button" aria-label="Foto anterior do Gran Park">‹</button>
+              <button class="carousel-arrow carousel-next" type="button" aria-label="Próxima foto do Gran Park">›</button>
+              <span class="carousel-counter" aria-live="polite"><span data-current>1</span> / <span data-count>13</span></span>
+            </div>
+            <div class="property-copy">
+              <div><p>Residence</p><h3>Gran Park</h3></div>
+              <a href="#contato" aria-label="Consultar Gran Park Residence">↗</a>
+            </div>
+          </article>
+
+          <!-- ALAMEDA DAS CASTANHEIRAS: 13 FOTOS -->
+          <article class="property-card reveal">
+            <div
+              class="property-image property-image-tall property-carousel"
+              data-carousel
+              data-folder="images/empreendimentos/alameda-das-castanheiras"
+              data-total="13"
+              data-name="Alameda das Castanheiras"
+            >
+              <span class="property-tag">Em destaque</span>
+              <button class="carousel-arrow carousel-prev" type="button" aria-label="Foto anterior do Alameda das Castanheiras">‹</button>
+              <button class="carousel-arrow carousel-next" type="button" aria-label="Próxima foto do Alameda das Castanheiras">›</button>
+              <span class="carousel-counter" aria-live="polite"><span data-current>1</span> / <span data-count>13</span></span>
+            </div>
+            <div class="property-copy">
+              <div><p>Zona Leste — SJC</p><h3>Alameda das Castanheiras</h3></div>
+              <a href="#contato" aria-label="Consultar Alameda das Castanheiras">↗</a>
+            </div>
+          </article>
+
+          <!-- MORATTA: 12 FOTOS -->
+          <article class="property-card reveal">
+            <div
+              class="property-image property-image-tall property-carousel"
+              data-carousel
+              data-folder="images/empreendimentos/moratta"
+              data-total="12"
+              data-name="Moratta"
+            >
+              <span class="property-tag">Em destaque</span>
+              <button class="carousel-arrow carousel-prev" type="button" aria-label="Foto anterior do Moratta">‹</button>
+              <button class="carousel-arrow carousel-next" type="button" aria-label="Próxima foto do Moratta">›</button>
+              <span class="carousel-counter" aria-live="polite"><span data-current>1</span> / <span data-count>12</span></span>
+            </div>
+            <div class="property-copy">
+              <div><p>Empreendimento</p><h3>Moratta</h3></div>
+              <a href="#contato" aria-label="Consultar Moratta">↗</a>
+            </div>
+          </article>
+
+          <!-- SIETE RESIDENCE: 14 FOTOS -->
+          <article class="property-card reveal">
+            <div
+              class="property-image property-image-tall property-carousel"
+              data-carousel
+              data-folder="images/empreendimentos/siete-residence"
+              data-total="14"
+              data-name="Siete Residence"
+            >
+              <span class="property-tag">Em destaque</span>
+              <button class="carousel-arrow carousel-prev" type="button" aria-label="Foto anterior do Siete Residence">‹</button>
+              <button class="carousel-arrow carousel-next" type="button" aria-label="Próxima foto do Siete Residence">›</button>
+              <span class="carousel-counter" aria-live="polite"><span data-current>1</span> / <span data-count>14</span></span>
+            </div>
+            <div class="property-copy">
+              <div><p>Residence</p><h3>Siete Residence</h3></div>
+              <a href="#contato" aria-label="Consultar Siete Residence">↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- COMO FUNCIONA O ATENDIMENTO -->
+      <section class="service-section" id="atendimento">
+        <div class="service-intro reveal">
+          <p class="eyebrow">Uma escolha importante merece atenção</p>
+          <h2>Um atendimento pensado para você.</h2>
+          <p>Mais do que apresentar imóveis, meu trabalho é entender o que você procura e tornar cada etapa mais simples, clara e segura.</p>
+        </div>
+
+        <ol class="service-steps">
+          <li class="reveal"><span>01</span><div><h3>Entendo seus planos</h3><p>Conversamos sobre localização, orçamento e prioridades.</p></div></li>
+          <li class="reveal"><span>02</span><div><h3>Seleciono as melhores opções</h3><p>Você recebe imóveis alinhados ao que realmente procura.</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>Acompanho a sua decisão</h3><p>Estou ao seu lado durante visitas, dúvidas e negociação.</p></div></li>
+        </ol>
+      </section>
+
+      <!-- SOBRE A CORRETORA -->
+      <section class="about-section" id="sobre">
+        <div class="about-photo-placeholder reveal">
+          <div class="about-photo-circle">
+            <img src="images/foto-deborah.webp" alt="Deborah Nunes, corretora de imóveis" />
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="eyebrow eyebrow-dark">Deborah Nunes</p>
+          <h2>Atendimento humano para decisões que transformam vidas.</h2>
+          <p>Comprar um imóvel envolve sonhos, planejamento e muitas decisões. Meu propósito é oferecer uma experiência tranquila, transparente e personalizada para cada cliente.</p>
+          <p>Seja para morar ou investir, conte comigo para encontrar uma opção que faça sentido para o seu momento.</p>
+          <!-- Coloque abaixo o número verdadeiro do CRECI. 
+          <span class="creci">CRECI: adicione o número</span>-->
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section class="contact-section" id="contato">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Vamos conversar?</p>
+          <h2>Encontre um imóvel para chamar de seu.</h2>
+          <p>Entre em contato para receber informações atualizadas sobre os empreendimentos e descobrir qual opção combina com você.</p>
+        </div>
+
+        <div class="contact-links reveal">
+          <!-- TROQUE pelo WhatsApp com DDD. -->
+          <a href="https://wa.me/5512981987690" target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>Iniciar uma conversa</strong><b aria-hidden="true">↗</b></a>
+          <!-- TROQUE SEU_USUARIO pelo Instagram da Deborah. -->
+          <a href="https://instagram.com/SEU_USUARIO" target="_blank" rel="noreferrer"><span>Instagram</span><strong>@SEU_USUARIO</strong><b aria-hidden="true">↗</b></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+      <img src="images/logo-deborah-nunes.png" alt="Deborah Nunes, corretora de imóveis" />
+      <p>Atendimento personalizado para encontrar o imóvel certo.</p>
+      <small>© <span id="current-year"></span> Deborah Nunes</small>
+    </footer>
+  </body>
+</html>
