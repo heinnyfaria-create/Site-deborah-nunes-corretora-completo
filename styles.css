@@ -720,7 +720,123 @@ button { color: inherit; font: inherit; }
   .contact-links a {
     grid-template-columns: 58px 1fr auto;
   }
+/* =====================================================
+   CORREÇÕES PARA CELULAR
+===================================================== */
 
+@media (max-width: 760px) {
+
+  /* HEADER: logo à esquerda e menu à direita */
+  .site-header {
+    gap: 16px;
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  /* Esconde o menu do computador */
+  .desktop-nav {
+    display: none;
+  }
+
+  /* Evita que a logo empurre o menu para fora */
+  .brand {
+    min-width: 0;
+  }
+
+  .brand-logo {
+    height: 50px;
+    max-width: 100%;
+    width: 200px;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: calc(100svh - 78px);
+    padding-bottom: 36px;
+    padding-top: 64px;
+  }
+
+  /* Mostra mais o prédio e esconde parte do texto da própria foto */
+  .hero-background {
+    object-position: 68% center;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 12vw, 52px);
+    line-height: 0.94;
+  }
+
+  /* DIFERENCIAIS: um embaixo do outro */
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits article {
+    border-bottom: 1px solid var(--border);
+    border-right: 0;
+    padding: 24px 0;
+  }
+
+  .benefits article:last-child {
+    border-bottom: 0;
+  }
+
+  /* FOTOS DOS EMPREENDIMENTOS
+     Mantém um formato mais horizontal e corta menos as fotos. */
+  .property-image,
+  .property-image-tall {
+    aspect-ratio: 4 / 3;
+    height: auto;
+  }
+
+  .property-copy {
+    gap: 15px;
+  }
+
+  .property-copy > div {
+    min-width: 0;
+  }
+
+  .property-copy h3 {
+    font-size: clamp(23px, 7vw, 27px);
+  }
+
+  /* ATENDIMENTO: texto e etapas um abaixo do outro */
+  .service-section {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTATO: texto e links um abaixo do outro */
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-links {
+    min-width: 0;
+  }
+
+  .contact-links strong {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Ajustes para celulares muito estreitos */
+@media (max-width: 380px) {
+  .brand-logo {
+    width: 175px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .contact-links a {
+    grid-template-columns: 1fr auto;
+  }
+
+  .contact-links span {
+    grid-column: 1 / -1;
+  }
+}
   .contact-links strong {
     font-size: 18px;
   }
