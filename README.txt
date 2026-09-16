@@ -1,14 +1,9 @@
 SITE DEBORAH NUNES — COMO EDITAR
 
-1. Abra esta pasta no VS Code.
-2. Abra o index.html no navegador ou com a extensão Live Server.
-3. Os textos e links ficam no index.html.
-4. Cores, fontes, tamanhos e espaçamentos ficam no styles.css.
-5. O menu do celular e as animações ficam no script.js.
 
 LINKS QUE PODEM SER TROCADOS
 
-- O WhatsApp atual está configurado como: https://wa.me/5512981987690
+- O WhatsApp atual está configurado como: https://wa.me/5512000000
   Se precisar alterar, use código do país e DDD, apenas números.
 
 - Procure por: https://instagram.com/SEU_USUARIO
@@ -38,4 +33,4 @@ O atributo data-total no index.html informa ao JavaScript quantas imagens cada c
 
 IMPORTANTE
 
-O nome foi escrito como "Deborah Nunes", seguindo a grafia da logo enviada.
+O nome foi escrito como "Deborah Nunes", seguindo a grafia da logo montada.
